@@ -1,0 +1,8 @@
+.results-list {
+  margin-top: 1.5rem;
+}
+.empty-state {
+  color: #5B5950;
+  margin-top: 1.5rem;
+  font-style: italic;
+}

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Header from './Header';
 import Button from './Button';
-// import StudyForm from './StudyForm';
+import StudyForm from './StudyForm';
 // import ResultsList from './ResultsList';
 
 function App() {
@@ -16,9 +16,8 @@ function App() {
     <div style={{ maxWidth: '800px', margin: '0 auto' }}>
       <Header />
       <main style={{ padding: '24px' }}>
-        {/* PLACEHOLDER: <StudyForm onSearch={handleSearch} /> */}
+        <StudyForm onSubmit={({ course, timeSlot }) => handleSearch(course, timeSlot)} />
         {/* PLACEHOLDER: <ResultsList matches={matches} /> */}
-        <Button label="Find Matches" onClick={() => handleSearch('Calculus', 'Morning')} />
       </main>
     </div>
   );
